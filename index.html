@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function() {
+          emailjs.init("iQX7L_gbkKmATjNhm");
+       })();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Culinary Institute</h1>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#calculator">Calorie Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome to Our Culinary Institute</h2>
+            <p>
+                Discover the art of cooking with our expert chefs and state-of-the-art facilities. At our Culinary Institute, we believe that great food is the foundation of happiness and health. Our passion for culinary excellence drives us to provide an unparalleled learning experience for aspiring chefs and food enthusiasts alike.
+            </p>
+            <p>
+                Whether you're dreaming of becoming a world-renowned chef, looking to enhance your home cooking skills, or simply want to explore the diverse world of gastronomy, we have a program tailored just for you. From classical French techniques to cutting-edge molecular gastronomy, our comprehensive curriculum covers all aspects of the culinary arts.
+            </p>
+            <p>
+                Join us on a flavorful journey where creativity meets tradition, and where every dish tells a story. Let's transform your passion for food into a lifelong skill and possibly a rewarding career. Your culinary adventure starts here!
+            </p>
+        </section>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>
+                We are dedicated to nurturing culinary talent and promoting the love of food. Founded in 1995 by renowned chef Maria Gonzalez, our Culinary Institute has been at the forefront of culinary education for over two decades. Our mission is to inspire, educate, and empower the next generation of culinary professionals.
+            </p>
+            <p>
+                What sets us apart is our commitment to hands-on learning. Our state-of-the-art kitchens are equipped with the latest culinary technology, allowing students to practice their skills in a professional environment. We believe in learning by doing, which is why our programs emphasize practical experience alongside theoretical knowledge.
+            </p>
+            <p>
+                Our faculty consists of experienced chefs from diverse culinary backgrounds, each bringing their unique expertise and passion to the classroom. From Michelin-starred restaurant owners to food scientists and nutritionists, our instructors provide a well-rounded education that goes beyond just cooking techniques.
+            </p>
+            <p>
+                We're proud of our strong connections with the food industry, which allow us to offer valuable internship opportunities and job placements for our graduates. Many of our alumni have gone on to become successful chefs, restaurateurs, food critics, and culinary innovators around the world.
+            </p>
+            <p>
+                At our Culinary Institute, we don't just teach cooking; we cultivate a deep appreciation for food, its origins, and its power to bring people together. Join us in our mission to spread the joy of good food and the art of fine cooking.
+            </p>
+        </section>
+        <section id="calculator" class="section">
+            <h2>Recipe Calorie Calculator</h2>
+            <form id="calorie-form">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" required>
+                <label for="ingredients">Ingredients (comma-separated):</label>
+                <input type="text" id="ingredients" required>
+                <label for="servings">Number of Servings:</label>
+                <input type="number" id="servings" required>
+                <input type="submit" value="Calculate Calories">
+            </form>
+            <div id="calorie-result"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
